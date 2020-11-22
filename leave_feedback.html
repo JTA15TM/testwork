@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Загрузка...</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="snackbar_style.css"/>
+        <link rel="stylesheet" href="feedback/feedback_style.css"/>
+        <script type="text/javascript" src="toolbar.js"></script>
+        <script type="text/javascript" src="snackbar.js"></script>
+        <script type="text/javascript" src="feedback/feedback.js"></script>
+    </head>
+
+    <body>
+        <!--Toolbar-->
+        <!--Toolbar-->
+        <div class="toolbar"></div>
+        <div class="toolbar_back"></div>
+
+        <center><div id="c-form__main">
+            <input class="c-checkbox" type="checkbox" id="checkbox">
+                <div class="c-formContainer">
+                    <form class="c-form">
+                        <input class="c-form__input" placeholder="Минимум 4 символа..." type="text" pattern="^[А-Яа-яЁё\s.,-=+()#@!~`?\u0026>']{4,}$" min="4" required>
+                        <label class="c-form__buttonLabel" for="checkbox" onclick="get_action(this);">
+                            <button class="c-form__button" type="button">Отправить</button>
+                        </label>
+                        <label class="c-form__toggle" for="checkbox" data-title="Оставить отзыв"></label>
+                    </form>
+                </div>
+        </div></center>
+        
+        <div id="snackbar">Мы будем продолжать улучшать наши сервисы!</div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/background.png");
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px gray;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    font-family: "DefFont";
+}
+
+@font-face 
+{
+    font-family: "DefFont";
+    src: url(font/Comfortaa-Medium.ttf);
+}
+
+@font-face 
+{
+    font-family: "DefFontBold";
+    src: url(font/Comfortaa-Bold.ttf);
+}
+
+@font-face 
+{
+    font-family: "DefFontRegular";
+    src: url(font/Comfortaa-Regular.ttf);
+}
+
+#toolbar_button
+{
+    background: linear-gradient(45deg, #d91cff, #00A2FF);
+    color: #FFFFFF;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    width: auto;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+#toolbar_button:hover
+{
+    opacity: 70%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(109, 109, 109);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+	border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, #00A2FF, #d91cff);
+	border-radius: 10px;
+    background: linear-gradient(45deg, #00A2FF, #d91cff);
+}
